@@ -64,7 +64,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['editCategory'])) {
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['deleteId'])) {
     $deleteId = $_POST['deleteId'];
 
-    $checkStmt = $conn->prepare("SELECT id FROM some_table WHERE category = (SELECT category FROM category WHERE id =?)"); // Replace some_table with actual table name if needed
+    $checkStmt = $conn->prepare("SELECT id FROM commodity WHERE category = (SELECT category FROM category WHERE id =?)"); // Replace some_table with actual table name if needed
     $checkStmt->bind_param('i', $deleteId);
     $checkStmt->execute();
     $checkStmt->store_result();
