@@ -1,0 +1,243 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.main-header {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+}
+
+.logout-btn {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+}
+
+.logout-btn:hover {
+    color: #e07a00;
+}
+
+.logout-btn svg {
+    margin-left: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.tabs {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    padding: 0 20px;
+}
+
+.tab {
+    padding: 12px 20px;
+    text-decoration: none;
+    color: #333;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s ease;
+}
+
+.tab.active {
+    font-weight: bold;
+    color: #007BFF;
+    border-bottom: 2px solid #007BFF;
+}
+
+.tab:hover {
+    background-color: #f8f9fa;
+    color: #007BFF;
+}
+
+.sub-tabs {
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    padding: 0 20px;
+    font-size: 0.9em;
+}
+
+.sub-tab {
+    padding: 8px 15px;
+    text-decoration: none;
+    color: #555;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s ease;
+}
+
+.sub-tab.active {
+    font-weight: bold;
+    color: #007BFF;
+    border-bottom: 2px solid #007BFF;
+}
+
+.sub-tab:hover {
+    background-color: #f8f9fa;
+    color: #007BFF;
+}
+
+.category-list {
+    padding: 20px;
+}
+
+.category-list h2 {
+    margin-bottom: 15px;
+}
+
+.search-bar {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin: 0 10px;
+    flex: 1;
+}
+
+.add-btn,
+.edit-btn,
+.search-bar button,
+.refresh-btn {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+}
+
+.add-btn:hover,
+.edit-btn:hover,
+.search-bar button:hover,
+.refresh-btn:hover {
+    background-color: #0056b3;
+}
+
+.delete-btn {
+    background-color: #e07a00;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+    background-color: #b06100;
+}
+
+.add-form,
+.edit-form {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    border: 1px solid #ccc;
+}
+
+.edit-form h3,
+.add-form h3 {
+    margin-bottom: 15px;
+}
+
+.edit-form label,
+.add-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.edit-form input,
+.add-form input {
+    width: calc(100% - 18px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+
+.edit-form button,
+.add-form button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.edit-form button:hover,
+.add-form button:hover {
+    background-color: #0056b3;
+}
+
+.edit-form button:last-child,
+.add-form button:last-child {
+    background-color: #e07a00;
+    transition: background-color 0.3s ease;
+}
+
+.edit-form button:last-child:hover,
+.add-form button:last-child:hover {
+    background-color: #b06100;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.category-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.category-list table th {
+    background-color: rgb(195, 225, 255);
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+    border-right: none;
+}
+
+.category-list table td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    border-right: none;
+}
